@@ -74,19 +74,7 @@
 
           <a class="navbar-brand" href="#">
 
-            <img
-
-              src="/img/logo.gif"
-
-              alt="Lapminer Logo"
-
-              width="30"
-
-              height="30"
-
-              class="d-inline-block align-text-top"
-
-            />
+            
 
             Lapminer Hay Gáy
 
@@ -418,173 +406,11 @@ function myFunction() {
 
   var channelID = "UCqZ4kYJ3QFdihfa3rZZa9Sg"; var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id="; $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) { var link = data.items[0].link; var id = link.substr(link.indexOf("=")+1); $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0"); });
 
-</script>-webkit-transform:translate(5%,0);
+</script>
 
-  -moz-transform:translate(5%,0);
 
   
-
-}
-
-.event-calendar ul,
-
-.event-calendar ul li,
-
-.event-calendar h1,
-
-.event-calendar h2
-
-{
-
-  margin:0;
-
-  padding:0;
-
-  list-style:none;
-
-}
-
-.event-calendar .events-body ul li {
-
-  position:relative;
-
-   border-bottom:1px solid #777474;
-
-}
-
-.event-calendar .events-body ul li:last-child {
-
-  border:0;
-
-}
-
-.event-calendar .heading-title {
-
-  padding:10px 20px;
-
-  text-transform:uppercase;
-
-  border-bottom:4px solid #000;
-
-  font-size:.9em;
-
-  position:relative;
-
-  font-family: 'Roboto', sans-serif;
-
-}
-
-.event-calendar .icon-box {
-
-  position:absolute;
-
-  right:20px;
-
-  top:0;
-
-  bottom:0;
-
-  margin:auto;
-
-  height:30px;
-
-  font-size:1.8em;
-
-}
-
-/* EVENTS LEFT CONTES */
-
-.event-calendar .event-left-content {
-
-  padding:15px 20px;
-
-}
-
-.event-calendar .event-left-content .title-event,
-
-.event-calendar .event-left-content .title-event h2,
-
-.event-calendar .event-left-content .event-date,
-
-.event-calendar .event-left-content .event-location
-
-{
-
-  font-family: 'Roboto', sans-serif;
-
-}
-
-.event-calendar .event-left-content .title-event {
-
-  width:80%;
-
-}
-
-.event-calendar .event-left-content .title-event h2 {
-
-  text-transform:uppercase;
-
-  margin:0;
-
-  padding:0;
-
-}
-
-.event-calendar .event-left-content .event-date {
-
-  font-size:.8em;
-
-}
-
-.event-calendar .event-left-content .event-location {
-
-  text-transform:uppercase;
-
-  font-weight:bold;
-
-  font-size:.8em;
-
-}
-
-/* EVENT ICON HOLDER  */
-
-.event-calendar .event-icon{
-
-  position:absolute;
-
-  width:auto;
-
-  height:50px;
-
-  display:block;
-
-  background:#f00;
-
-  right:20px;
-
-  top:0;
-
-  bottom:0;
-
-  margin:auto;
-
-  text-align:center;
-
-  color:#fff;
-
   
-
-  -webkit-border-radius: 8px;
-
-  border-radius: 8px;
-
-  
-
-  padding:2px 10px;
-
-    
-
-}
 
 </style>
 
