@@ -44,3 +44,8 @@ var x = setInterval(function() {
   }
 
 }, 1000);
+function googleTranslateElementInit() {
+
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+
+}
