@@ -444,4 +444,5 @@ body {
   margin-bottom: 12px; /* Add some space below the input */
 
 }
-
+.bg-geyser-primary {
+	background-color: #008ab8;}
