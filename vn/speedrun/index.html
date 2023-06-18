@@ -113,6 +113,7 @@
 <a clSs="nav-link  active" aria-current="page" href="/vn/index.html">Trang Chủ</a>
 
              
+
 <a class="nav-link active" aria-current="page" href="/vn/shop/">Dịch Vụ</a>
 
                            
@@ -152,6 +153,7 @@
 <a class="nav-link" href="/vn/index.html">Trang Chủ</a>
 
             
+
 <a class="nav-link" href="/vn/shop/">Dịch Vụ</a>
 
                 <script async src="https://cse.google.com/cse.js?cx=71bcdc310f6df4b63">
@@ -216,7 +218,7 @@
 
         <img src="/logo.jpg" alt="Logo-Lapminer" width="240" height="130">
 
-          <h1>Lapminer</h1>
+          <h1>Lapminer Studio</h1>
 
           <p>
 
@@ -231,36 +233,22 @@
           
 
           </nav>
-          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 
-<ul id="myUL">
+            <div class="hero">
+
+        <div 
+
+          id="hero" class="text-center">
+
+     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+<p> Không tìm thấy đơn nào ở khu vực của bạn </p>
+<ul id="myUL">
+
+
+
 </ul>
-<div class="hero">
+        </div>  
 
-        <div id="hero" class="text-center">                             
-
-
-          <script>
-function myFunction() {
-  // Declare variables
-  var input, filter, ul, li, a, i, txtValue;
-  input = document.getElementById('myInput');
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("myUL");
-  li = ul.getElementsByTagName('li');
-
-  // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < li.length; i++) {
-    a = li[i].getElementsByTagName("a")[0];
-    txtValue = a.textContent || a.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
-    } else {
-      li[i].style.display = "none";
-    }
-  }
-}
-          </script>
     
 
     
@@ -303,7 +291,7 @@ function myFunction() {
 
 <script>
 
-
+}
 
   var channelID = "UCqZ4kYJ3QFdihfa3rZZa9Sg"; var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id="; $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) { var link = data.items[0].link; var id = link.substr(link.indexOf("=")+1); $("#youtube_video").attr("src","https://youtube.com/embed/"+id + "?controls=0&showinfo=0&rel=0"); });
 
