@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" 
+
+          content="width=device-width, initial-scale=1.0">
+
+    <link href=
+
+"https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+
+          rel="stylesheet" 
+
+          integrity=
+
+"sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+
+          crossorigin="anonymous">
+
+    <title>Password Protect Site using staticrypt</title>
+
+    <script src=
+
+"https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js" 
+
+            integrity=
+
+"sha384-lp4k1VRKPU9eBnPePjnJ9M2RF3i7PC30gXs70+elCVfgwLwx1tv5+ctxdtwxqZa7" 
+
+            crossorigin="anonymous"></script>
+
+</head>
+
+  
+
+<body class="text-center">
+
+    <form id="static-pass-form">
+
+        <div class="mb-3">
+
+            <label for="password" 
+
+                   class="form-label">Password</label>
+
+            <input id="static-pass"
+
+                   type="password" 
+
+                   class="form-control"
+
+                   id="Password"
+
+                   aria-describedby="PasswordHelp">
+
+            <div id="PasswordHelp" 
+
+                 class="form-text">
+
+                 You need Password to access the page.
+
+                </div>
+
+        </div>
+
+        <input type="submit" 
+
+               class="btn btn-primary"
+
+               value="Access" />
+
+    </form>
+
+    <script>
+
+        var keySize = 256;
+
+        var iterations = 1000;
+
