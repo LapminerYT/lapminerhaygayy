@@ -24,7 +24,7 @@ firebase.initializeApp(firebaseConfig);
 
 var contactFormDB = firebase.database().ref("editfree");
 
-document.getElementById("contactForm").addEventListener("submit", submitForm);
+document.getElementById("editfree").addEventListener("submit", submitForm);
 
 function submitForm(e) {
 
@@ -52,13 +52,13 @@ function submitForm(e) {
 
   //   reset the form
 
-  document.getElementById("contactForm").reset();
+  document.getElementById("editfree").reset();
 
 }
 
 const saveMessages = (name, emailid, msgContent) => {
 
-  var newContactForm = contactFormDB.push();
+  var neweditfree = editfreeDB.push();
 
   newContactForm.set({
 
