@@ -22,9 +22,9 @@ firebase.initializeApp(firebaseConfig);
 
 // reference your database
 
-var contactFormDB = firebase.database().ref("contactForm");
+var contactFormDB = firebase.database().ref("editfree");
 
-document.getElementById("19").addEventListener("submit", submitForm);
+document.getElementById("contactForm").addEventListener("submit", submitForm);
 
 function submitForm(e) {
 
