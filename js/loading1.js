@@ -10,7 +10,7 @@ var timeLimit = 10000;
 
 window.addEventListener("load", function() {
 
-	window.location.href = "https://lapminerhaygayy.blogspot.com/";
+	window.location.href = "https://lapminernews.blogspot.com/";
 
 });
 
