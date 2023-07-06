@@ -4,138 +4,124 @@
 
 <head>
 
+    <!--=== Default tags ===-->
+
     <meta charset="UTF-8">
+
+    <title>LapminerHayGayy </title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Messages | Firebase</title>
+    <link rel="shortcut icon" href="Images/logo.webp" type="image/x-icon">
 
-    <link rel="stylesheet" href="/css/styles.css">
+
+
+    <!--=== Social profile ===-->
+
+    
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="description" content="Lapminer Website">
+
+  <meta name="keywords" content="Lapminer , Youtube , Hay Gáy , Lập Mai Nơ">
+
+  <meta name="author" content="John Doe">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
+
+
+<!--=== Style ===-->
+
+<style>
+
+    #loading {
+
+     position: fixed;
+
+     z-index: 9999;
+
+     top: 0;
+
+     left: 0;
+
+     width: 100%;
+
+     height: 100%;
+
+     background-color: #fff;
+
+     display: flex;
+
+     justify-content: center;
+
+     align-items: center;
+
+    }
+
+    
+
+    .spinner {
+
+     width: 50px;
+
+     height: 50px;
+
+     border-radius: 50%;
+
+     border: 5px solid #ccc;
+
+     border-top-color: #333;
+
+     animation: spin 1s ease-in-out infinite
+
+    }
+
+    
+
+    @keyframes spin {
+
+        0% {transform: rotate(0deg);}
+
+        100% {transform: rotate(360deg);}
+
+    }
+
+
+
+</style>
+
+
+
+<!--=== Spinner ===-->
+
 <body>
 
-    <div class="container">
+    <div id="loading">
 
-         <!-- input tag -->
-
-    <input id="searchbar" onkeyup="search_animal()" type="text"
-
-        name="search" placeholder="Search animals..">
-
-      
-
-    <!-- ordered list -->
-
-    <ol id='list'>
-
-        <li class="animals"><a href="/vn/news/1/conanmv2023.html">Thông tin PHIM ĐIỆN ẢNH THÁM TỬ LỪNG DANH CONAN: TÀU NGẦM SẮT MÀU ĐEN</a></li>
-
-      
-    </ol>
-
-      
+        <div class="spinner"></div>
+<p><b>Redirecting... </b></p>
+    </div>
 
 
-            </div>
 
-        </form>
+    <div id="error-message">
+
+        <h1>Vui lòng tải lại ttang!</h1>
 
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
-
-    <script>
-      // JavaScript code
-
-function search_animal() {
-
-    let input = document.getElementById('searchbar').value
-
-    input=input.toLowerCase();
-
-    let x = document.getElementsByClassName('animals');
-
-      
-
-    for (i = 0; i < x.length; i++) { 
-
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
-
-            x[i].style.display="none";
-
-        }
-
-        else {
-
-            x[i].style.display="list-item";                 
-
-        }
-
-    }
-
-}
 
 
-    </script>
-  <style>
-    #searchbar{
+    <script src="/js/loading.js"></script>
 
-     margin-left: 15%;
-
-     padding:15px;
-
-     border-radius: 10px;
-
-   }
-
- 
-
-   input[type=text] {
-
-      width: 30%;
-
-      -webkit-transition: width 0.15s ease-in-out;
-
-      transition: width 0.15s ease-in-out;
-
-   }
-
- 
-
-   /* When the input field gets focus,
-
-        change its width to 100% */
-
-   input[type=text]:focus {
-
-     width: 70%;
-
-   }
-
- 
-
-  #list{
-
-    font-size:  1.5em;
-
-    margin-left: 90px;
-
-   }
-
- 
-
-.animals{
-
-   display: list-item;    
-
-  } 
-
-
-  </style>
 </body>
 
-                                                                                                            </html>
+</html>
