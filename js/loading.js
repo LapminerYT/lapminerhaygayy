@@ -2,7 +2,7 @@
 //        LOADING
 // =====================
 
-var timeLimit = 5000;
+var timeLimit = 10000;
 window.addEventListener("load", function() {
 	window.location.href = "/vn/index.html";
 });
