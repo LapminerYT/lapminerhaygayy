@@ -4,57 +4,123 @@
 
 <head>
 
+    <!--=== Default tags ===-->
+
     <meta charset="UTF-8">
+
+    <title>LapminerHayGayy </title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Contact Messages | Firebase</title>
+    <link rel="shortcut icon" href="Images/logo.webp" type="image/x-icon">
 
-    <link rel="stylesheet" href="/css/styles.css">
+
+
+    <!--=== Social profile ===-->
+
+    
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="description" content="Lapminer Website">
+
+  <meta name="keywords" content="Lapminer , Youtube , Hay Gáy , Lập Mai Nơ">
+
+  <meta name="author" content="John Doe">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
+
+
+<!--=== Style ===-->
+
+<style>
+
+    #loading {
+
+     position: fixed;
+
+     z-index: 9999;
+
+     top: 0;
+
+     left: 0;
+
+     width: 100%;
+
+     height: 100%;
+
+     background-color: #fff;
+
+     display: flex;
+
+     justify-content: center;
+
+     align-items: center;
+
+    }
+
+    
+
+    .spinner {
+
+     width: 50px;
+
+     height: 50px;
+
+     border-radius: 50%;
+
+     border: 5px solid #ccc;
+
+     border-top-color: #333;
+
+     animation: spin 1s ease-in-out infinite
+
+    }
+
+    
+
+    @keyframes spin {
+
+        0% {transform: rotate(0deg);}
+
+        100% {transform: rotate(360deg);}
+
+    }
+
+
+
+</style>
+
+
+
+<!--=== Spinner ===-->
+
 <body>
 
-    <div class="container">
+    <div id="loading">
 
-        <form action="" id="contactForm">
+        <div class="spinner"></div>
+<p><b>Redirecting... </b></p>
+    </div>
 
-            <div class="alert">Thông tin của bạn đã được gửi.Shop sẽ liên lạc với bạn trong 6 giờ tới.Nhớ kiểm tra Email nha.</div>
 
-            <div class="inputBox">
 
-                <input type="text" id="name" placeholder="Tên của bạn" />
+    <div id="error-message">
 
-            </div>
-<h1>Đặt đơn thuê Biên Tập Viên</h1>
-            <div class="inputBox">
-
-                <input type="email" id="emailid" placeholder="Địa chỉ email của bạn" />
-
-            </div>
-
-            <div class="inputBox">
-
-                <textarea id="msgContent" cols="30" rows="10" placeholder="Link Video Cần Edit , Ghi Chú ,..."></textarea>
-
-            </div>
-
-            <div class="inputBox">
-
-                <button type="submit">Gửi</button>
-
-            </div>
-
-        </form>
+        <h1>Vui lòng tải lại ttang!</h1>
 
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 
-    <script src="/js//mail.js"></script>
+
+    <script src="/js/loading2.js"></script>
 
 </body>
 
